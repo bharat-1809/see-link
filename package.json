@@ -1,0 +1,28 @@
+{
+  "name": "seelink",
+  "version": "1.0.0",
+  "description": "URL Previewer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharat-1809/seelink.git"
+  },
+  "keywords": [
+    "URL",
+    "Preview",
+    "url_previewer"
+  ],
+  "author": "Bharat Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bharat-1809/seelink/issues"
+  },
+  "homepage": "https://github.com/bharat-1809/seelink#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^11.0.0"
+  }
+}
