@@ -1,7 +1,7 @@
-import { seeLink } from "./lib/see_link.js";
+//@ts-check
+import seeLink from "./lib/see_link";
 
 (async () => {
-  const res = await seeLink(
-    "https://web.whatsapp.com/", "detailed");
+  const res = await seeLink("medium.com", ["detailed"]);
   console.log(res);
 })();
