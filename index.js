@@ -1,7 +1,7 @@
-import { seelink } from "./lib/seelink.js";
+import { seeLink } from "./lib/see_link.js";
 
 (async () => {
-  const res = await seelink(
-    "https://www.youtube.com/v/sicTI_2pV6k", "theme", "video");
+  const res = await seeLink(
+    "https://web.whatsapp.com/", "detailed");
   console.log(res);
 })();
