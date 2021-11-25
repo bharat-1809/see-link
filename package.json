@@ -1,5 +1,5 @@
 {
-  "name": "seelink",
+  "name": "see-link",
   "version": "1.0.0",
   "description": "URL Previewer",
   "main": "index.js",
@@ -8,19 +8,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bharat-1809/seelink.git"
+    "url": "git+https://github.com/bharat-1809/see-link.git"
   },
   "keywords": [
     "URL",
+    "link",
     "Preview",
-    "url_previewer"
+    "url_previewer",
+    "link_preview"
   ],
   "author": "Bharat Sharma",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bharat-1809/seelink/issues"
+    "url": "https://github.com/bharat-1809/see-link/issues"
   },
-  "homepage": "https://github.com/bharat-1809/seelink#readme",
+  "homepage": "https://github.com/bharat-1809/see-link#readme",
   "dependencies": {
     "get-urls": "^10.0.1",
     "is-base64": "^1.1.0",
