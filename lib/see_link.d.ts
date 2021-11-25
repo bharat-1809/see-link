@@ -1,15 +1,17 @@
-declare async function seeLink(
-  uri: string,
-  seeLinkOptions: string[]
-): Promise<LinkPreviewRes>;
+declare function seeLink(
+  url: string,
+  linkPrevOptions?: string[]
+): Promise<LinkPrevRes>;
 export = seeLink;
 
-declare interface LinkPreviewRes {
-  title: string;
-  description: string;
-  image: string;
-  domainName: string;
-  video?: string;
-  themeColor?: string;
-  icon?: string;
-}
+declare interface LinkPrevRes {
+    title: string;
+    description: string;
+    image: string;
+    domainName: string;
+    video?: string;
+    themeColor?: string;
+    favIcon?: string;
+    type?: string;
+};
+export = LinkPrevRes;

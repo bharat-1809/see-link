@@ -1,7 +1,2 @@
-//@ts-check
-import seeLink from "./lib/see_link";
-
-(async () => {
-  const res = await seeLink("medium.com", ["detailed"]);
-  console.log(res);
-})();
+const seeLink = require('./lib/see_link');
+module.exports = seeLink;
