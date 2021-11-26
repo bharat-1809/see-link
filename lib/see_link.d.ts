@@ -59,16 +59,28 @@ declare namespace seeLink {
 }
 
 /**
- *
+ * Gets the preview metadata from a link. SeeLink looks for the [open-graph](http://ogp.me/) and
+ * [twitter cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup)
+ * markup to get information about the link. It also looks for the HTML tags in case no `og` and `twitter`
+ * markups are found.
+ * 
  * @param url
  * @param options
+ * 
+ * @returns A promise that resolves to the preview metadata.
+ * 
+ * @example
+ * ```
+ * const seeLink = require('see-link');
+ * const prev = await seeLink('bharatsharma.me', {getThemeColor: true});
+ * ```
  */
 declare function seeLink(
   url: string,
   options?: seeLink.Options
-): Promise<LinkPrevRes>;
+): Promise<SeeLinkRes>;
 
-declare interface LinkPrevRes {
+declare interface SeeLinkRes {
   title: string;
   description: string;
   image: string;

@@ -1,7 +1,7 @@
 {
   "name": "see-link",
   "version": "1.0.0",
-  "description": "URL Previewer",
+  "description": "See-a-link! Get the preview metadata of the given link",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +11,10 @@
     "url": "git+https://github.com/bharat-1809/see-link.git"
   },
   "keywords": [
-    "URL",
+    "url",
     "link",
-    "Preview",
-    "url_previewer",
+    "preview",
+    "url_preview",
     "link_preview"
   ],
   "author": "Bharat Sharma",
