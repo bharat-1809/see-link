@@ -1,11 +1,10 @@
 const seeLink = require("see-link");
 
 (async () => {
-  const prev = await seeLink(`passportindia.gov.in`, {
+  const prev = await seeLink(`pub.dev`, {
     getThemeColor: true,
     getVideo: true,
     detailedPreview: true,
-    headless: false,
   });
   console.log(prev);
 })();
