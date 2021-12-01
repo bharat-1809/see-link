@@ -8,3 +8,4 @@ exports["favIcon"] = "https://github.com/favicon.ico";
 exports["type"] = "website";
 exports["themeColor"] = "#ababff";
 exports["video"] = "https://youtu.be/wE0uhqaxS_E";
+exports["null"] = null;
