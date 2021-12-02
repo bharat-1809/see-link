@@ -15,8 +15,12 @@
     "url",
     "link",
     "preview",
-    "url_preview",
-    "link_preview"
+    "link preview",
+    "url preview",
+    "open graph",
+    "twitter cards",
+    "javascript",
+    "nodejs"
   ],
   "author": {
     "name": "Bharat Sharma",
