@@ -3,7 +3,7 @@ const expect = require("chai").expect;
 const {PORT} = require("../test_setup/config");
 const expectedPrev = require("../test_setup/preview");
 
-const baseURL = `http://localhost:${PORT}/test/`;
+const baseURL = `http://localhost:${PORT}/test:`;
 
 describe("see-link : link preview", () => {
     describe("works for all category tags", () => {
