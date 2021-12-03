@@ -12,7 +12,7 @@ See-Link looks through the [open-graph](http://ogp.me/), [twitter cards](https:/
 
 ## Getting Started
 
-`npm install see-link`
+```npm install see-link```
 
 ## Usage
 
