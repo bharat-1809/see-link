@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: 'Fire up test server'
-        run: npm run-script test-server
+        run: npm run-script test-server &
 
       - name: Wait for server to start
         run: sleep 5
