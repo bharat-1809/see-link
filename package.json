@@ -4,7 +4,7 @@
   "description": "See-a-link! Get the preview metadata of the given link",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --timeout 5000",
+    "test": "mocha --timeout 5000 --exit",
     "test-server": "node ./test_setup/server"
   },
   "repository": {
