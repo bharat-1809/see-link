@@ -64,8 +64,8 @@ declare namespace seeLink {
  * markup to get information about the link. It also looks for the HTML tags in case no `og` and `twitter`
  * markups are found.
  * 
- * @param url
- * @param options
+ * @param url Text containing the URL to get the preview metadata from.
+ * @param options Options for the request.
  * 
  * @returns A promise that resolves to the preview metadata.
  * 
