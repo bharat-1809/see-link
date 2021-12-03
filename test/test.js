@@ -63,7 +63,7 @@ describe("see-link : link preview", () => {
 
     it("should throw error for an invalid url", async () => {
       return seeLink("abc.c").catch((err) => {
-        expect(err).to.contain("Error");
+        expect(err).to.be.an("error");
       });
     });
   });
