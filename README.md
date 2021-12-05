@@ -3,7 +3,7 @@
 
 [![Build Status](https://img.shields.io/github/workflow/status/bharat-1809/see-link/CI?logo=github)](https://github.com/bharat-1809/see-link)
 [![Package Version](https://img.shields.io/badge/npm-v1.0.0-blue)](https://www.npmjs.com/package/see-link)
-[![License](https://img.shields.io/github/license/bharat-1809/see-link)](https://github.com/bharat-1809/see-link/blob/2a79daaa549d986eb05d51c8a919452f84a3b14e/LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-orange)](https://github.com/bharat-1809/see-link/blob/2a79daaa549d986eb05d51c8a919452f84a3b14e/LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://www.paypal.me/bsharma1809)
 
 **See-a-Link**! Get the preview metadata like title, description, image, video, etc from a link or a link extracted from the given text.
