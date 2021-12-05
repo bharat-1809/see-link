@@ -16,7 +16,7 @@ Check out [this article](https://dev.to/veerreshr/seo-tags-meta-tags-that-you-ne
 
 - A different domain cannot be requested from your web app (browsers block cross-origin-requests). If you do not know how same-origin-policy works, here is a [great article](https://dev.to/lydiahallie/cs-visualized-cors-5b8h), therefore this library works on node (back-end environments) and certain mobile run-times (like react-native).
 
-- This library fetches the website and parses its html using [puppeteer](https://pptr.dev/), as if the user would visit the page, this means: Instagram (and other social sites) might redirect you to a sign-up page, you can try to change the user-agent property (by default it uses [Facebook's user agent](https://developers.facebook.com/docs/sharing/webmasters/crawler/#:~:text=app%20or%20website.-,Crawler%20IPs%20and%20User%20Agents,-The%20Facebook%20crawler)) and the response you get then might be different, but there is nothing wrong with this library.
+- This library fetches the website and parses its html using [puppeteer](https://pptr.dev/), as if the user would visit the page. This means that some websites might redirect you to a sign-up page. You can try to change the user-agent property (by default it uses [Facebook's user agent](https://developers.facebook.com/docs/sharing/webmasters/crawler/#:~:text=app%20or%20website.-,Crawler%20IPs%20and%20User%20Agents,-The%20Facebook%20crawler)) and the response you get then might be different, but there is nothing wrong with this library.
 
 ## Getting Started
 
@@ -34,9 +34,8 @@ const seeLink = require('see-link');
 (async () => {
     const preview = await seeLink('https://www.bharatsharma.me');
 
-     /** You can directly pass a url as above or pass a chunk of text
-      *  and seeLink will extract the first link from it. Like this:
-      */
+    // You can directly pass a url as above or pass a chunk of text
+    // and seeLink will extract the first link from it. Like this:
 
     const preview_text = await seeLink('This text will be parsed by seeLink https://www.bharatsharma.me');
 
