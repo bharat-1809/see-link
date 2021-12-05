@@ -1,6 +1,6 @@
 {
   "name": "see-link",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "See-a-link! Get the preview metadata of the given link",
   "main": "index.js",
   "scripts": {
