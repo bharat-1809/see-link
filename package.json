@@ -37,7 +37,8 @@
     "is-base64": "^1.1.0",
     "node-fetch": "^2.6.6",
     "puppeteer-extra": "^3.2.3",
-    "puppeteer-extra-plugin-stealth": "^2.9.0"
+    "puppeteer-extra-plugin-stealth": "^2.9.0",
+    "puppeteer-extra-plugin-user-preferences": "^2.3.1"
   },
   "devDependencies": {
     "chai": "^4.3.4",
