@@ -41,7 +41,7 @@ const compareExpectations = (
 describe("see-link : link preview", () => {
   describe("works for all category tags", () => {
     it("should return metadata using open graph tags", async () => {
-      const res = await seeLink(baseURL + "1", { detailedPreview: true });
+      const res = await seeLink(baseURL + "1", { detailedPreview: true, getDominantThemeColor: false });
       compareExpectations(res, { themeColor: false });
     });
 
@@ -51,12 +51,12 @@ describe("see-link : link preview", () => {
     });
 
     it("should return metadata using third degree tags", async () => {
-      const res = await seeLink(baseURL + "3", { detailedPreview: true });
+      const res = await seeLink(baseURL + "3", { detailedPreview: true, getDominantThemeColor: false });
       compareExpectations(res, {favIcon: false, themeColor: false, type: false, video: false});
     });
 
     it("should return metadata using fourth degree tags", async () => {
-      const res = await seeLink(baseURL + "4", { detailedPreview: true });
+      const res = await seeLink(baseURL + "4", { detailedPreview: true, getDominantThemeColor: false });
       compareExpectations(res, {favIcon: false, themeColor: false, type: false, video: false, image: false});
     });
   });
@@ -76,6 +76,11 @@ describe("see-link : link preview", () => {
       return seeLink("abc.c").catch((err) => {
         expect(err).to.be.an("error");
       });
+    });
+
+    it("should detect correct dominant color", async () => {
+      const res = await seeLink(baseURL + "7", { getThemeColor: true });
+      expect(res.themeColor).to.equal("#040404");
     });
   });
 });
