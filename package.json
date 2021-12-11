@@ -1,6 +1,6 @@
 {
   "name": "see-link",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "See-a-link! Get the preview metadata of the given link",
   "main": "index.js",
   "typings": "lib/see_link.d.ts",

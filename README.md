@@ -2,7 +2,7 @@
 # See-Link
 
 [![Build Status](https://img.shields.io/github/workflow/status/bharat-1809/see-link/CI?logo=github)](https://github.com/bharat-1809/see-link)
-[![Package Version](https://img.shields.io/badge/npm-v1.0.2-blue)](https://www.npmjs.com/package/see-link)
+[![Package Version](https://img.shields.io/badge/npm-v2.0.0-blue)](https://www.npmjs.com/package/see-link)
 [![License](https://img.shields.io/badge/License-MIT-orange)](https://github.com/bharat-1809/see-link/blob/2a79daaa549d986eb05d51c8a919452f84a3b14e/LICENSE)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal)](https://www.paypal.me/bsharma1809)
 
@@ -10,7 +10,26 @@
 
 See-Link looks through the [open-graph](http://ogp.me/), [twitter cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup) markup and other meta tags to get the preview information from the link. It visits a link in a headless browser and scrapes the required information. It can also return the dominant color of the page in case the `theme-color` is needed but no meta info is found.
 
+*To know more about **how See-Link works** checkout this [wiki](https://github.com/bharat-1809/see-link/wiki/How-does-see-link-works%3F).*
+
 Check out [this article](https://dev.to/veerreshr/seo-tags-meta-tags-that-you-need-for-previews-on-social-networks-343n) to know about meta tags, SEO and their need for generating link previews.
+
+# Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [API](#api)
+- [Options](#options)
+- [Test](#test)
+- [License](#license)
+
+## Features
+
+- Get the dominant color of the page if required.
+- Can return images present in html body incase meta tags are not available.
+- Can be customized to return the info as per the requirement.
+- Uses stealth measures and user-agent can be customized to bypass restrictions setup by sites to prevent bot scraping.
 
 **NOTE**
 
