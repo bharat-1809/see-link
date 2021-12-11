@@ -3,6 +3,7 @@
   "version": "1.0.2",
   "description": "See-a-link! Get the preview metadata of the given link",
   "main": "index.js",
+  "typings": "lib/see_link.d.ts",
   "scripts": {
     "test": "mocha --timeout 5000 --exit",
     "test-server": "node ./test_setup/server"
