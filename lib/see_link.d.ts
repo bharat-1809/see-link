@@ -33,6 +33,14 @@ declare namespace seeLink {
     readonly getThemeColor?: boolean;
 
     /**
+     Get the dominant color of the page incase `theme-color` meta info
+     is not available and `getThemeColor` is set to true.
+    
+     @default true
+    */
+    readonly getDominantThemeColor?: boolean;
+
+    /**
      Additional command line arguments to pass to the browser instance.
     
      @remarks This is an option of puppeteer

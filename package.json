@@ -33,6 +33,7 @@
   },
   "homepage": "https://github.com/bharat-1809/see-link#readme",
   "dependencies": {
+    "colorthief": "^2.3.2",
     "get-urls": "^10.0.1",
     "is-base64": "^1.1.0",
     "node-fetch": "^2.6.6",

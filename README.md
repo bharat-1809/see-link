@@ -8,7 +8,7 @@
 
 **See-a-Link**! Get the preview metadata like title, description, image, video, etc from a link or a link extracted from the given text.
 
-See-Link looks through the [open-graph](http://ogp.me/), [twitter cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup) markup and other meta tags to get the preview information from the link. It visits a link in a headless browser and scrapes the required information.
+See-Link looks through the [open-graph](http://ogp.me/), [twitter cards](https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/markup) markup and other meta tags to get the preview information from the link. It visits a link in a headless browser and scrapes the required information. It can also return the dominant color of the page in case the `theme-color` is needed but no meta info is found.
 
 Check out [this article](https://dev.to/veerreshr/seo-tags-meta-tags-that-you-need-for-previews-on-social-networks-343n) to know about meta tags, SEO and their need for generating link previews.
 
@@ -85,8 +85,9 @@ Additionally you can pass an options object to the function to change the defaul
 |-------------|-----------|------|
 | detailedPreview | Get all the possible metadata supported by the see-link (eg: video, theme-color, type, favIcon) | boolean |
 | getVideo | Get the video metadata along with the default result | boolean |
-| getThemeColor | Get the theme-color metadata along with the default result | boolean |
-| args | Arguments to pass to the puppeteer.launch function | string[] |
+| getThemeColor | Get the `theme-color` metadata along with the default result | boolean |
+| getDominantThemeColor | When `getThemeColor` is set to true and no `theme-color` meta info is found then get the dominant color of the page. By default it's `true` | boolean |
+| args | Arguments to pass to the `puppeteer.launch` function | string[] |
 | userAgent | User-Agent to use when visiting the website | string |
 | timeout | Timeout in milliseconds for the request | number |
 | executablePath | Path to the chrome/chromium executable | string |
