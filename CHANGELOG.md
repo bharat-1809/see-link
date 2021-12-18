@@ -1,3 +1,7 @@
+## 2.0.1
+
+* Change the default directory for saving scrn-shots to `tmp`
+
 ## 2.0.0
 
 * Return the dominant color of the page when no theme-color meta markup found.

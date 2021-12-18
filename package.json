@@ -1,6 +1,6 @@
 {
   "name": "see-link",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "See-a-link! Get the preview metadata of the given link",
   "main": "index.js",
   "typings": "lib/see_link.d.ts",
@@ -39,8 +39,7 @@
     "is-base64": "^1.1.0",
     "node-fetch": "^2.6.6",
     "puppeteer-extra": "^3.2.3",
-    "puppeteer-extra-plugin-stealth": "^2.9.0",
-    "puppeteer-extra-plugin-user-preferences": "^2.3.1"
+    "puppeteer-extra-plugin-stealth": "^2.9.0"
   },
   "devDependencies": {
     "chai": "^4.3.4",
